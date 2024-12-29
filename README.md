@@ -47,7 +47,7 @@ bot.on('end', () => {
 });
 
 ```
-Github
+npmjs.com
 ```
-https://github.com/GamerMrAlros/mineflayer-utility-bot
+https://www.npmjs.com/package/mineflayer-utility-bot
 ```
