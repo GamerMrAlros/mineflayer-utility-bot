@@ -30,6 +30,6 @@ bot.on('spawn', () => {
 });
 ```
 Github
-
+```
 https://github.com/GamerMrAlros/mineflayer-utility-bot
 ```
