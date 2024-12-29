@@ -1,0 +1,9 @@
+{
+  "name": "mineflayer-utility-bot",
+  "version": "1.0.0",
+  "description": "A utility package for Mineflayer bots, including automatic eating and totem handling.",
+  "main": "index.js",
+  "author": "FourTerms2",
+  "license": "MIT",
+  "dependencies": {}
+}
