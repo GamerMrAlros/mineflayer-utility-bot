@@ -4,7 +4,7 @@ open a ticket in pull requiests
 ```
 how to install:
 ```
-npm i mineflayer-totem
+npm install mineflayer-utility-bot
 ```
 
 example code:
