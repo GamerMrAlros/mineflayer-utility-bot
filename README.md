@@ -9,25 +9,43 @@ npm i mineflayer-totem
 
 example code:
 ```
-// Import Mineflayer and the mineflayer-totem package
 const mineflayer = require('mineflayer');
-const mineflayerTotem = require('mineflayer-totem');  // Import the mineflayer-totem package
+const { Food, AutoTotem } = require('mineflayer-utility-bot'); // Ensure this module is correctly installed
 
-// Create the bot
+// Create a bot instance with a valid username
 const bot = mineflayer.createBot({
-  host: 'localhost', // or your server address
-  port: 25565,       // server port
-  username: 'TotemBot', // replace with your bot's name
+  host: 'localhost', // Replace with your server's address if necessary
+  port: 25565,       // Replace with your server's port if necessary
+  username: 'util_bot' // Ensure this is a valid username without spaces
 });
 
-// Once the bot spawns, initialize the auto-totem functionality
-bot.on('spawn', () => {
-  // You need to instantiate mineflayerTotem with 'new'
-  const autoTotem = new mineflayerTotem(bot);  // Create a new instance of AutoTotem
-  autoTotem.start();  // Start the auto-totem functionality
+// Event listener when the bot spawns successfully
+bot.once('spawn', () => {
+  console.log('Bot has spawned successfully!');
+  
+  // Initialize Food module
+  const food = new Food(bot);
+  console.log('Food module initialized.');
 
-  console.log("AutoTotem is active!");
+  // Initialize AutoTotem module and start it
+  const autoTotem = new AutoTotem(bot);
+  autoTotem.start();
+  console.log('AutoTotem module initialized and started.');
 });
+
+// Handle connection errors or other issues
+bot.on('error', (err) => {
+  console.error('Bot encountered an error:', err);
+});
+
+bot.on('kicked', (reason) => {
+  console.log('Bot was kicked from the server:', reason);
+});
+
+bot.on('end', () => {
+  console.log('Bot has been disconnected from the server.');
+});
+
 ```
 Github
 ```
