@@ -1,4 +1,3 @@
-```
 This a noob friendly package for new commers for mineflayer. So people that have been around mineflayer should not take this package serious
 ```
 Having problems
