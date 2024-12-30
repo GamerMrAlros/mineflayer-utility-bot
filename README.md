@@ -1,6 +1,6 @@
 Having problems
 ```
-open a ticket in pull requiests
+open a ticket in pull Issues
 ```
 how to install:
 ```
