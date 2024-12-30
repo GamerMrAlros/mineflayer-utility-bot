@@ -1,6 +1,8 @@
+This a noob friendly package for new commers for mineflayer. So people that have been around mineflayer should not take this package serious
+```
 Having problems
 ```
-open a ticket in pull Issues
+open a ticket in pull requiests
 ```
 how to install:
 ```
@@ -47,7 +49,7 @@ bot.on('end', () => {
 });
 
 ```
-npmjs.com
+Github
 ```
-https://www.npmjs.com/package/mineflayer-utility-bot
+https://github.com/GamerMrAlros/mineflayer-utility-bot
 ```
